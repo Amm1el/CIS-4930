@@ -9,7 +9,6 @@ Submission Date: 01-23-2026
 
 # ------------------------------------------
 # Problem 1: Planetary Cargo Weight Checker
-# ------------------------------------------
 
 planet = input("Enter destination (Earth, Moon, Mars): ").lower() # Additional Twist .lower() and prints text / asks for starting input
 num_items = int(input("Enter number of items: ")) # Prints text / asks input for number of items
@@ -39,7 +38,6 @@ else:
 
 # ----------------------------------------------
 # Problem 2: Astronaut Training Fatigue Tracker
-# ----------------------------------------------
 
 hours = int(input("Enter number of hours tracked: ")) #input for number of hours tracked
 
@@ -47,7 +45,7 @@ max_fatigue = 0 #initializing variables
 dangerous = 0
 increases = 0
 
-previous = None #initializes a variable that does not have a value yet and will used with fatigue
+previous = None #initializes a variable that does not have a value yet and will be used with fatigue
 
 for i in range(hours): # for loop over amount of hours that will be tracked
     fatigue = int(input(f"Enter fatigue level for hour {i + 1}: ")) #assigns number to fatigue
@@ -76,7 +74,6 @@ print(f"Training day classification: {classification}") #prints classification
 
 # ------------------------------------------------
 # Problem 3: Interactive Dungeon Door Code Puzzle
-# ------------------------------------------------
 
 energy = 0 # start with energy at 0
 
@@ -101,7 +98,6 @@ else:
 
 # ----------------------------------------------------
 # Problem 4: Librarian's Overdue Book Fine Calculator
-# ----------------------------------------------------
 
 book_type = input("Enter book type (novel, textbook, childrens): ").lower() # accepts book type disregarding capitalization
 days = int(input("Enter days overdue: ")) # input integer for days a book overdue
@@ -141,7 +137,6 @@ print(f"Total due: ${total:.2f}")
 
 # ------------------------------------------------
 # Problem 5: Guess the Number with Adaptive Hints
-# ------------------------------------------------
 
 secret = 73 # 'secret' integer
 guesses = 0 #document number of guesses from participant
@@ -170,3 +165,5 @@ while True: # keeps in loop with no chance of breaking out if you don't guess ri
     print(f"{hint} {direction}.") # print hint and direction
 
 print(f"Secret number: {secret}, your final guess: {guess}, total guesses: {guesses}.") # prints number, amount of guesses, and final guess (same as secret number)
+
+# ------------------------------------------------------------------------------------------------------------------------------------------------------------------

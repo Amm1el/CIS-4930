@@ -12,7 +12,6 @@ Submission Date: 02-02-2026
 # --------------------------------------------------
 
 # creating the list of tuples exactly like the sample data format:
-# (building_code, number_of_devices, hour_of_day)
 wifi_logs = [
     ("LIB", 45, 9),   # building, devices, hour
     ("LIB", 92, 11),
@@ -25,7 +24,6 @@ wifi_logs = [
 
 # -----------------------------
 # 1) Set: Unique buildings with >50 devices at once
-# -----------------------------
 
 # start with an empty set because sets only store unique items (no duplicates)
 busy_buildings = set()
@@ -40,10 +38,8 @@ print("Busy buildings (>50):", busy_buildings)
 
 # -----------------------------
 # 2) List comprehension: Peak hours (≥80 devices) with building names
-# -----------------------------
 
 # peak hours means device count >= 80, and we want the tuple included in the output list
-# list comprehension makes this a one-line filter + collect
 peak_hours = [(b, d, h) for (b, d, h) in wifi_logs if d >= 80]
 
 print("Peak hours (≥80):", peak_hours)
@@ -53,7 +49,6 @@ print("Peak hours (≥80):", peak_hours)
 # -----------------------------
 
 # the prompt says slicing, but their expected output is basically "all device counts for LIB"
-# so we gather all device counts where building == "LIB"
 # (this will match the example output list)
 library_devices = [devices for (building, devices, hour) in wifi_logs if building == "LIB"]
 
@@ -61,9 +56,7 @@ print("Library slices:", library_devices)
 
 # -----------------------------
 # 4) Report: Busiest building by average devices (manual accumulation)
-# -----------------------------
 
-# we need average devices per building, so we need:
 # totals per building AND counts per building
 totals = {}  # building -> sum of devices
 counts = {}  # building -> how many entries
@@ -90,7 +83,6 @@ for building in totals:
 print(f"Busiest: {busiest_building} (avg {highest_avg:.1f} devices)")
 
 
-# --------------------------------------------------
 # Problem 2: University Course Planner
 # --------------------------------------------------
 
@@ -160,12 +152,10 @@ else:
     print("Course not found.")
 
 
-# --------------------------------------------------
 # Problem 3: Cafeteria Menu & Order Validator
 # --------------------------------------------------
 
 # menu is a dictionary of dictionaries
-# outer key = item name
 # value = inner dict with price and category
 menu = {
     "burger": {"price": 5.50, "category": "main"},
@@ -197,30 +187,25 @@ for i in range(num_items):
     order.append({"item": name, "qty": qty})
 
 # now compute bill
-total = 0.0  # running total for everything that is valid on menu
+total = 0.0  
 
 print("\nOrder:")
 
-for entry in order:
-    # grab what user typed for item and qty
+for entry in order: # grab what user typed for item and qty
     item = entry["item"]
     qty = entry["qty"]
 
     # check if item exists in menu dictionary
     if item in menu:
-        # pull price
-        price = menu[item]["price"]
+        price = menu[item]["price"] # pull
 
-        # compute line total
-        line_total = price * qty
+        line_total = price * qty # compute line total
 
-        # add to total
-        total += line_total
+        total += line_total # add to total
 
         # print line in required format style
         print(f"{item} x{qty} @ ${price:.2f} = ${line_total:.2f}")
-    else:
-        # if not on menu, warn and skip it
+    else: # if not on menu, warn and skip it
         print(f"Item '{item}' not on menu, skipping.")
 
 print("--------------")

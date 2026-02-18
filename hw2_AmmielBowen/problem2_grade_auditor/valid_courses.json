@@ -1,0 +1,5 @@
+{
+"min_grade": 0.0,
+"max_grade": 4.0,
+"required_courses": ["CS101", "MATH201"]
+}

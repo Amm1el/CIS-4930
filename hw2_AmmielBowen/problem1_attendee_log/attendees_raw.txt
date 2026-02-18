@@ -1,0 +1,4 @@
+A001,Alice García,alice@example.com
+A002,Bob Smith,bob.smith@example.com
+A003,Carol Johnson,carol.j@example.org
+A004,Dāviņš Ozoliņš,davins.o@example.lv

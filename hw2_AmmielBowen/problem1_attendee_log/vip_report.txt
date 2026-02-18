@@ -1,0 +1,3 @@
+A001: Alice García <alice@example.com>
+A004: Dāviņš Ozoliņš <davins.o@example.lv>
+A010: NOT FOUND

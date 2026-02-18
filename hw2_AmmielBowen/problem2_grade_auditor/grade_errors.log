@@ -1,0 +1,3 @@
+[2026-02-08T22:45:05] ERROR: S002,Bob Smith - invalid grade 'abc' (ValueError)
+[2026-02-08T22:45:05] ERROR: S003,Carol Lee - grade 5.2 outside range [0.0, 4.0]
+[2026-02-08T22:45:05] ERROR: S004,David Kim - grade -1.0 outside range [0.0, 4.0]

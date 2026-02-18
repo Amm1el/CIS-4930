@@ -1,0 +1,5 @@
+[2026-02-08T21:57:50] PROCESS: Loaded configuration
+[2026-02-08T21:57:50] PROCESS: Loaded 4 attendees from attendees_raw.txt
+[2026-02-08T21:57:50] PROCESS: Merged 3 new attendees from new_registrations.csv
+[2026-02-08T21:57:50] PROCESS: Wrote 7 total attendees to attendees_final.json
+[2026-02-08T21:57:50] PROCESS: Wrote VIP report for 3 IDs to vip_report.txt

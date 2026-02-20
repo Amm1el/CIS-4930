@@ -1,12 +1,37 @@
 [
-{
-"id": "A001",
-"name": "Alice García",
-"email": "alice@example.com"
-},
-{
-"id": "A002",
-"name": "Bob Smith",
-"email": "bob.smith@example.com"
-}
+  {
+    "id": "A001",
+    "name": "Alice García",
+    "email": "alice@example.com"
+  },
+  {
+    "id": "A002",
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com"
+  },
+  {
+    "id": "A003",
+    "name": "Carol Johnson",
+    "email": "carol.j@example.org"
+  },
+  {
+    "id": "A004",
+    "name": "Dāviņš Ozoliņš",
+    "email": "davins.o@example.lv"
+  },
+  {
+    "id": "A005",
+    "name": "Elaine Zhou",
+    "email": "elaine.z@example.com"
+  },
+  {
+    "id": "A006",
+    "name": "Fernando Núñez",
+    "email": "fernando.n@example.com"
+  },
+  {
+    "id": "A007",
+    "name": "Zoë Lee",
+    "email": "zoe.lee@example.net"
+  }
 ]
